@@ -1,0 +1,150 @@
+/* 
+    GLOBAL
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: lightblue; */
+}
+
+#root{
+    width: 100vw;
+    height: 100vh;
+}
+
+@font-face{
+    font-family: impact;
+    src: url("./assets/impact.ttf")
+    /* src: url("./assets/unicode.impact.ttf") */
+}
+
+/* 
+    TYPOGRAPHY
+*/
+/* font-family: "Karla", sans-serif; */
+/* font-family: "Inter", sans-serif; */
+
+
+h1{
+    font-family: "Karla", sans-serif;
+    font-size: 1.5rem; /* 24px */
+    color: white;
+    letter-spacing: -0.15rem;
+}
+
+.meme-text-top,
+.meme-text-bottom{
+    font-family: impact;
+    font-weight: bold;
+    font-size: 4.6875rem; /* 75px */
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+/* 
+    FLEX CONTAINERS
+*/
+header,
+.header-container,
+.misc-container,
+.toggle-container,
+.app-container{
+    display: flex;
+}
+
+/* 
+    APP
+*/
+.app-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 
+    HEADER
+*/
+
+header{
+    width: 100%;
+    background: linear-gradient(0.25turn, #672280, #A626D3);
+    justify-content: center;
+    height: 4em;
+}
+
+.header-container{
+    max-width: 900px;
+    align-items: center;
+}
+
+.troll-logo{
+    width: 31px;
+}
+
+.misc-container{
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-container{
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background: lightgrey;
+    cursor: pointer;
+}
+
+.toggle-circle{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.dark-mode{
+    justify-content: end;
+}
+
+/* MAIN */
+main{
+    padding: 20px;
+    max-width: 900px;
+}
+
+form{
+    display: flex;
+    gap: 20px;
+}
+
+.meme-container{
+    background-color: lightgrey;
+    position: relative;
+    width: 100%;
+}
+
+.meme-img{
+    width: 100%;
+}
+
+.meme-text-top{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+.meme-text-bottom{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-transform: uppercase;
+}
